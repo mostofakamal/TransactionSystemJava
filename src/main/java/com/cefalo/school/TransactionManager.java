@@ -11,11 +11,12 @@ public class TransactionManager {
   //TODO:  Add a Method for Adding Transaction
   //TODO: Add a method for Checking if there is any Pending Transtion
   public boolean hasPendingTransactions() {
+    // This should track if there is any pending transaction request (Deposit/Withdraw/ Transfer)
     throw new NotImplementedException();
   }
 
   public void processPendingTransactions() {
-    // The logic for processing pending transaction goes here
+    // The logic for processing pending transaction sequentially goes here
     // It should track which are already processed and which are pending transactions
     throw new NotImplementedException();
   }
