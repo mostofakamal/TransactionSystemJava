@@ -12,27 +12,27 @@ public class TransactionTests {
   @Test
   public void depositAccountCheckBalanceAndThenWithdraw_AllTransactionsSuccessful() {
       // Create Account with Balance 0
-            // Add a deposit reqest of 100 to that account
-            // Pre-check : transactionManager Should have pending transactions at this point
-            // Account Balance Should be 0 at this point
+      // Add a deposit reqest of 100 to that account
+      // Pre-check : transactionManager Should have pending transactions at this point
+      // Account Balance Should be 0 at this point
 
-            // Run ProcessPendingTransactions() to process Pending TransactionRequests
+     // Run ProcessPendingTransactions() to process Pending TransactionRequests
 
-            // Check : there should not be any pending Transactions now
+     // Check : there should not be any pending Transactions now
 
-            // Check balance of the account which should be 100 now
+     // Check balance of the account which should be 100 now
 
-            // Create a Withdraw of 50 on that account
+     // Create a Withdraw of 50 on that account
 
-            // Perform a ProcessPendingTransactions() to process this
+      // Perform a ProcessPendingTransactions() to process this
 
-            // check : No pending Transactions at this point
-            // Check balance: should be 100-50 =50
+     // check : No pending Transactions at this point
+      // Check balance: should be 100-50 =50
   }
 
   @Test
   public void test_WithDrawRequestForAmountGreaterThanAvailableBalance_TransactionExecutedWhenBalanceConstrainMet() {
-   // Create account with 75 as initial Balance
+            // Create account with 75 as initial Balance
             // Add a withdraw request of 100 (exceeding the available balance)
             // Check Balance: should be 75 
 
@@ -55,7 +55,7 @@ public class TransactionTests {
 
   @Test
   public void testTransferRequestForAmountGreaterThanAvailableBalanceTransactionExecutedWhenBalanceConstrainMet() {
-    // Create firstAccount with Initial Balance 100
+             // Create firstAccount with Initial Balance 100
             // Create secondAccount with Initial Balance 2000
 
             // Create a transfer request of 700 from firstAccount to secondAccount
@@ -80,7 +80,7 @@ public class TransactionTests {
 
   @Test
   public void test_Transfer_ThenRollback_AccountStatusRegainedItsInitialState() {
-          // Create firstAccount with Initial Balance 2000
+             // Create firstAccount with Initial Balance 2000
             // Create secondAccount with Initial Balance 100
 
             // Create a transfer request of 700 from firstAccount to secondAccount
@@ -97,7 +97,7 @@ public class TransactionTests {
             // Balance Check : SecondAccount -> 100
   }
   
-   @Test
+        @Test
         public void test_Transfer_ThenWithdrawFromTheSecondAccount_ThenRollback()
         {
             // Create firstAccount with Initial Balance 2000
